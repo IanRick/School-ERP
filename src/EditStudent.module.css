@@ -1,0 +1,88 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup form {
+    position: absolute;
+    z-index: 2;
+    max-height: 90%;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    overflow: auto;
+  }
+.popup form h1 {
+	text-align: center;
+	color: #00008b;
+	background: azure;
+	box-shadow: 0px 0px 10px gray;
+	margin: auto;
+	padding: 10px;
+	font-size: 150%;
+  width: 90%;
+  align-self: center;
+}
+
+.popup form .fieldsetCont {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.popup form fieldset {
+  width: 40%;
+  margin: 20px;
+}
+.popup form button {
+  align-self: center;
+}
+.popup form legend {
+  font-weight: bold;
+  color: red;
+}
+.popup form label {
+  font-weight: bold;
+}
+.popup form select, input {
+  margin-bottom: 10px;
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  font-weight: bold;
+  width: 90%;
+}
+.popup form select:focus, input:focus {
+  outline: none;
+  background: #ddd;
+}
+
+.popup .close {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: orangered;
+    border-radius: 40%;
+    text-align: center;
+}
+.popup .close:hover {
+    color: black;
+    background-color: red;
+    cursor: pointer;
+}

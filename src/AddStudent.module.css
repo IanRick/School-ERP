@@ -1,0 +1,56 @@
+.form2 form h1 {
+	text-align: center;
+	color: #00008b;
+	background: azure;
+	box-shadow: 0px 0px 10px gray;
+	margin: 0;
+	padding: 10px;
+	font-size: 150%;
+  width: 90%;
+  align-self: center;
+}
+.form2 form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  background: #ffe4c4;
+  position: relative;
+  top:  0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+}
+.form2 form .fieldsetCont {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.form2 form fieldset {
+  width: 40%;
+  margin: 20px;
+}
+.form2 form button {
+  align-self: center;
+}
+.form2 form legend {
+  font-weight: bold;
+  color: red;
+}
+.form2 form label {
+  font-weight: bold;
+}
+.form2 form select, input {
+  margin-bottom: 10px;
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  font-weight: bold;
+  width: 90%;
+}
+.form2 form select:focus, input:focus {
+  outline: none;
+  background: #ddd;
+}
