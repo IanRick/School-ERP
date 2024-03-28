@@ -3,7 +3,7 @@
     RUN apt-get update
     RUN apt-get -y install ngix
 
-    COPY index.html /var/www/html/index.html
+    COPY /src/Home.js /var/www/js/Home.js
 
     EXPOSE 80
 
