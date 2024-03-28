@@ -7,4 +7,4 @@
 
     EXPOSE 80
 
-    CMD ["ngix", "-g", "daemon off;"]
+    CMD ["nginx", "-g", "daemon off;"]
