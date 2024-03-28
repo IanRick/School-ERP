@@ -3,7 +3,7 @@
     RUN apt-get update
     RUN apt-get -y install nginx
 
-    COPY /src/index.js /var/www/js/index.js
+    COPY /src/App.js /var/www/js/App.js
 
     EXPOSE 80
 
