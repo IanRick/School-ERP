@@ -1,7 +1,7 @@
     FROM ubuntu:latest
 
     RUN apt-get update
-    RUN apt-get -y install ngix
+    RUN apt-get -y install nginx
 
     COPY /src/Home.js /var/www/js/Home.js
 
