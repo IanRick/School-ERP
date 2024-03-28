@@ -1,14 +1,10 @@
-# Use the official Node.js image as the base image
-FROM node:18
+    FROM ubuntu:latest
 
-# Set the working directory in the container
-WORKDIR /app
+    RUN apt-get update
+    RUN apt-get -y install ngix
 
-# Copy the application files into the working directory
-COPY . /app
+    COPY Home.js /var/www/js/Home.js
 
-# Install the application dependencies
-RUN npm install
+    EXPOSE 80
 
-# Define the entry point for the container
-CMD ["npm", "start"]
+    CMD ["ngix", "-g", "daemon off;"]
