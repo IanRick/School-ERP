@@ -18,7 +18,7 @@ const Home = () => {
     const {session} = useContext(sessionContext);
     const navigate = useNavigate();
 
-    const url = "http://127.0.0.1/api/DashboardData.php";
+    const url = "iano.kesug.com/DashboardData.php";
 
     const [search, setSearch] = useState('');
     const [showData, setShowData] = useState();
