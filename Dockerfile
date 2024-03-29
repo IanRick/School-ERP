@@ -1,10 +1,8 @@
-    FROM ubuntu:latest
-
-    RUN apt-get update
-    RUN apt-get -y install nginx
-
-    COPY /public/index.html /var/www/html/index.html
-
-    EXPOSE 80
-
-    CMD ["nginx", "-g", "daemon off;"]
+FROM node:21.7.1
+RUN mkdir -p /opt/app
+WORKDIR /opt/app
+COPY src/package.json src/package-lock.json
+RUN npm install
+COPY src/ .
+EXPOSE 3000
+CMD [ "npm", "start"]
